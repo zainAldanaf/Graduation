@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctors.AddTopicsScreen">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="286dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="To add new data"
+        android:textColor="@color/blue"
+        android:textDirection="rtl"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choose_image"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:text="press to choose photo"
+        android:textColor="@color/blue"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/topic_address"
+        android:layout_width="310dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/textfeild"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/blue"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_add" />
+
+    <EditText
+        android:id="@+id/topic_details"
+        android:layout_width="300dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textfeild"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="description:"
+        android:gravity="center"
+        android:textColorHint="@color/blue"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_address" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="170dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:text="Add"
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+
+    <ImageView
+        android:id="@+id/image_add"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_image_24"
+        app:layout_constraintStart_toEndOf="@+id/choose_image"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        android:layout_marginEnd="171dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic_details" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="325dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_image" />
+
+    <Button
+        android:id="@+id/choose_video"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blue"
+        android:text="press to choose video"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "665538681755",
+    "firebase_url": "https://finalapplication-5dfa6-default-rtdb.firebaseio.com",
+    "project_id": "finalapplication-5dfa6",
+    "storage_bucket": "finalapplication-5dfa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665538681755:android:3fc4a64213be5b38691f3e",
+        "android_client_info": {
+          "package_name": "com.example.finalapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665538681755-1878o5pqj3isg1q08tv88jvfkh8bs3ba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2CdDYNUBWDsCIDXA_q5oy8NgUaaQn1JA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665538681755-1878o5pqj3isg1q08tv88jvfkh8bs3ba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665538681755:android:01ea262d33a7a6c4691f3e",
+        "android_client_info": {
+          "package_name": "com.example.palliativecareguidelines"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665538681755-1878o5pqj3isg1q08tv88jvfkh8bs3ba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2CdDYNUBWDsCIDXA_q5oy8NgUaaQn1JA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665538681755-1878o5pqj3isg1q08tv88jvfkh8bs3ba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

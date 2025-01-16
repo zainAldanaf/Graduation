@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctors.Doctorsign">
+
+    <EditText
+        android:id="@+id/doctoraddress"
+        android:layout_width="349dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/textfeild"
+        android:drawableStart="@drawable/baseline_add_location_24"
+        android:ems="10"
+        android:hint="address:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <EditText
+        android:id="@+id/doctorname"
+        android:layout_width="349dp"
+        android:background="@drawable/textfeild"
+        android:layout_height="53dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_person_outline_24"
+        android:ems="10"
+        android:hint="Full name:"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <EditText
+        android:id="@+id/doctorbirth"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textfeild"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_date_range_24"
+        android:ems="10"
+        android:hint=" Birthdate:"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <EditText
+        android:id="@+id/doctoremailsign"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:ems="10"
+        android:background="@drawable/textfeild"
+        android:hint=" E-Mail:"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <EditText
+        android:id="@+id/doctorphone"
+        android:layout_width="352dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_phone_24"
+        android:ems="10"
+        android:hint="phone :"
+        android:background="@drawable/textfeild"
+
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <EditText
+        android:id="@+id/doctorconfirmPass"
+        android:layout_width="353dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:background="@drawable/textfeild"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <EditText
+        android:id="@+id/doctorpassword"
+        android:layout_width="349dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="20dp"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="Password:"
+        android:inputType="textPassword"
+        android:background="@drawable/textfeild"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.726" />
+
+    <Button
+        android:id="@+id/doctorregister"
+        android:layout_width="271dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/blue"
+        android:text="Signup!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="311dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Signup"
+        android:textColor="@color/blue"
+        android:layout_marginEnd="66dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="234dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="60dp"
+        android:text="Please fill out the following form"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:layout_marginEnd="66dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/haveAccountlink"
+        android:layout_width="224dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Already have an account!"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorregister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
