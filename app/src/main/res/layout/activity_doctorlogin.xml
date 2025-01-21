@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#60ABA5"
     tools:context=".Doctors.Doctorlogin">
     <TextView
         android:id="@+id/textView7"
@@ -11,7 +12,7 @@
         android:layout_height="75dp"
         android:gravity="center"
         android:text="Login "
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +29,7 @@
         android:layout_marginEnd="55dp"
         android:gravity="center"
         android:text="Please login to continue."
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,22 +40,22 @@
 
     <EditText
         android:id="@+id/doctoremail"
-        android:layout_width="347dp"
+        android:layout_width="351dp"
         android:layout_height="55dp"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="36dp"
-        android:ems="10"
+        android:gravity="left"
         android:background="@drawable/textfeild"
-        android:hint="E-Mail"
-        android:inputType="textEmailAddress"
         android:drawableStart="@drawable/baseline_email_24"
         android:drawablePadding="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.418" />
+        app:layout_constraintVertical_bias="0.421" />
 
     <EditText
         android:id="@+id/doctorpass"
@@ -63,9 +64,7 @@
         android:background="@drawable/textfeild"
         android:drawableStart="@drawable/baseline_lock_24"
         android:drawablePadding="8dp"
-
         android:ems="20"
-        android:hint="Password"
         android:inputType="textPassword"
         android:textDirection="rtl"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -76,16 +75,18 @@
 
     <Button
         android:id="@+id/doctorlogin"
-        android:layout_width="283dp"
-        android:layout_height="59dp"
+        android:layout_width="141dp"
+        android:layout_height="61dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="192dp"
-        android:backgroundTint="@color/blue"
+        android:background="@color/teal_700"
+        android:gravity="center"
         android:text="Login"
+        android:textColor="@color/white"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -93,15 +94,15 @@
         android:layout_width="227dp"
         android:layout_height="40dp"
         android:layout_marginEnd="60dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginBottom="144dp"
         android:gravity="center"
         android:text="Don't Have an Account"
-        android:textColor="@color/blue"
+        android:textColor="@color/teal_700"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

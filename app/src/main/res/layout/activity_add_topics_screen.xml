@@ -4,31 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/basicColor"
     tools:context=".Doctors.AddTopicsScreen">
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="286dp"
         android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:text="To add new data"
-        android:textColor="@color/blue"
+        android:textColor="@color/white"
         android:textDirection="rtl"
         android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintHorizontal_bias="0.344"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/choose_image"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="press to choose photo"
-        android:textColor="@color/blue"
+        android:textColor="@color/teal_700"
         android:textSize="13dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -37,58 +42,65 @@
         android:id="@+id/topic_address"
         android:layout_width="310dp"
         android:layout_height="65dp"
-        android:layout_marginTop="216dp"
         android:background="@drawable/textfeild"
         android:ems="10"
+        android:gravity="center"
         android:hint="Address"
         android:inputType="textPersonName"
-        android:textColorHint="@color/blue"
-        android:gravity="center"
+        android:textColorHint="@color/basicColor"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_add" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
 
     <EditText
         android:id="@+id/topic_details"
         android:layout_width="300dp"
         android:layout_height="115dp"
-        android:layout_marginTop="20dp"
         android:background="@drawable/textfeild"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="description:"
         android:gravity="center"
-        android:textColorHint="@color/blue"
+        android:hint="description:"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/basicColor"
         android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topic_address" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
 
     <Button
         android:id="@+id/add_btn"
-        android:layout_width="170dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="Add"
+        android:textColor="@color/teal_700"
         android:textSize="25dp"
-        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressbar" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
 
     <ImageView
         android:id="@+id/image_add"
-        android:layout_width="95dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="224dp"
+        android:layout_height="133dp"
         android:src="@drawable/baseline_image_24"
-        app:layout_constraintStart_toEndOf="@+id/choose_image"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
 
     <ProgressBar
         android:id="@+id/progressbar"
@@ -105,22 +117,28 @@
 
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="325dp"
-        android:layout_height="122dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="224dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/choose_image" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
 
     <Button
         android:id="@+id/choose_video"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/blue"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:text="press to choose video"
+        android:textColor="@color/teal_700"
         android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
 </androidx.constraintlayout.widget.ConstraintLayout>

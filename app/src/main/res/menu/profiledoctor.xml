@@ -9,7 +9,7 @@
     </item>
 
     <item android:id="@+id/chatdoctor"
-        android:title="Chat"
+        android:title="settings"
         android:icon="@drawable/baseline_chat_24"
         >
 

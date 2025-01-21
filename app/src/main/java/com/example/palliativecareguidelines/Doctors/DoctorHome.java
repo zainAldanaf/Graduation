@@ -26,6 +26,7 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 import com.example.palliativecareguidelines.Adapters.DoctorAdapter;
+import com.example.palliativecareguidelines.AppSettingPage;
 import com.example.palliativecareguidelines.R;
 import com.example.palliativecareguidelines.modules.Topics;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -41,28 +42,12 @@ import java.util.ArrayList;
 
 public class DoctorHome extends AppCompatActivity implements DoctorAdapter.ItemClickListener ,DoctorAdapter.ItemClickListener2 {
 FloatingActionButton fba;
-    ImageView imageView;
-    VideoView videoView;
-    Button Choosevideo;
-    Uri videouri;
-    MediaController mediaController;
-    Button chooseimage;
-    EditText address;
-    EditText cotent;
-
-    Uri imageUri;
-    StorageReference storageReference;
-    StorageReference storageReference2;
-
-    ProgressDialog progressDialog;
-
-    FirebaseFirestore firebaseFirestore;
+    FloatingActionButton chatfba;
+    FloatingActionButton profileFab;
+    FloatingActionButton settingFab;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     ArrayList<Topics> items;
-    DoctorAdapter[] myListData;
     DoctorAdapter adapter;
-    EditText Updatetitle;
-    EditText Updatenote;
     LinearLayoutManager layoutManager = new LinearLayoutManager(this);
     RecyclerView rv;
     @SuppressLint("MissingInflatedId")
@@ -72,6 +57,10 @@ FloatingActionButton fba;
         setContentView(R.layout.activity_doctor_home);
 
         fba=findViewById(R.id.fab);
+        chatfba=findViewById(R.id.chatfab);
+        profileFab = findViewById(R.id.profileFab);
+        settingFab = findViewById(R.id.settingFab);
+
         rv = findViewById(R.id.recyclerview);
         items = new ArrayList<Topics>();
         adapter =new DoctorAdapter(this,items,this,this);
@@ -83,10 +72,36 @@ FloatingActionButton fba;
 
             }
         });
+
+        chatfba.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DoctorHome.this, ChatDoctor.class));
+
+            }
+        });
+
+        profileFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DoctorHome.this, DoctorProfile.class));
+
+            }
+        });
+
+        settingFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DoctorHome.this, Settings.class));
+
+            }
+        });
+
+
     }
 
     public  void getTopics(){
-        db.collection("Topics").get()
+        db.collection("DoctorTopic").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @SuppressLint("NotifyDataSetChanged")
                     @Override
@@ -98,9 +113,9 @@ FloatingActionButton fba;
                             for (DocumentSnapshot documentSnapshot : documentSnapshots) {
                                 if (documentSnapshot.exists()) {
                                     String id = documentSnapshot.getId();
-                                    String title = documentSnapshot.getString("topic_title");
-                                    String content = documentSnapshot.getString("topic_content");
-                                    String video = documentSnapshot.getString("image");
+                                    String title = documentSnapshot.getString("topic_address");
+                                    String content = documentSnapshot.getString("topic_details");
+                                    String video = documentSnapshot.getString("topic_img");
                                     String image = documentSnapshot.getString("topic_video");
 
 
@@ -124,7 +139,6 @@ FloatingActionButton fba;
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Log.e("LogDATA", "get failed with ");
-
 
                     }
                 });
@@ -167,7 +181,7 @@ FloatingActionButton fba;
     public void updateTopic() {
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Topic Details");
+        builder.setTitle("TopicDOC");
         final View customLayout = getLayoutInflater().inflate(R.layout.editscreen, null);
         builder.setView(customLayout);
 
@@ -227,8 +241,7 @@ FloatingActionButton fba;
 
                 break;
             case R.id.chatdoctor:
-                startActivity(new Intent(DoctorHome.this, ChatDoctor.class));
-
+                startActivity(new Intent(DoctorHome.this, AppSettingPage.class));
                 break;
 
         }
